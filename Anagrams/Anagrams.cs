@@ -4,7 +4,7 @@ namespace Anagrams
 {
     public class AnagramCls
     {
-
+        public string hola;
 
         public static bool CheckAnagrams(string word1, string word2)
         {
