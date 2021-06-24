@@ -3,10 +3,9 @@ using System.Collections.Generic;
 
 namespace Anagrams
 {
-    public class AnagramCls
+    public class Anagram
     {
-
-        public static void findAnagrams(List<string> words)
+        public static Dictionary<string,string> findAnagrams(List<string> words)
         {
             Dictionary<string, string> anagram = new Dictionary<string, string>();
             foreach (var word in words)
@@ -14,13 +13,16 @@ namespace Anagrams
                 string key = anagramHash(word);
                 if (anagram.ContainsKey(key))
                 {
-                    anagram[key] = string.Join(',',word);
+                    string value = anagram[key];
+                    anagram[key] = string.Concat(value,',',word);
                 }
                 else
                 {
-                    anagram.Add(key,null);
+                    anagram.Add(key,word);
                 }
             }
+            anagram = removeAnagram(anagram);
+            return anagram;
 
         }
 
@@ -49,6 +51,18 @@ namespace Anagrams
                     return false;
                 }
             }
+        }
+
+        private static Dictionary<string, string> removeAnagram(Dictionary<string, string> anagram)
+        {
+            foreach (var item in anagram)
+            {
+                if (checkAnagrams(item.Key,item.Value))
+                {
+                    anagram.Remove(item.Key);
+                }
+            }
+            return anagram;
         }
 
         private static string anagramHash(string input)

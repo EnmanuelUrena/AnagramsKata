@@ -8,24 +8,26 @@
     "net5.0": []
   },
   "packageFolders": {
-    "/home/enma/.nuget/packages/": {}
+    "C:\\Users\\Lia Calderon\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/Anagrams.csproj",
+      "projectUniqueName": "C:\\Users\\Lia Calderon\\Desktop\\Proyectos\\AnagramsKata\\Anagrams\\Anagrams.csproj",
       "projectName": "Anagrams",
-      "projectPath": "/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/Anagrams.csproj",
-      "packagesPath": "/home/enma/.nuget/packages/",
-      "outputPath": "/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/obj/",
+      "projectPath": "C:\\Users\\Lia Calderon\\Desktop\\Proyectos\\AnagramsKata\\Anagrams\\Anagrams.csproj",
+      "packagesPath": "C:\\Users\\Lia Calderon\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Lia Calderon\\Desktop\\Proyectos\\AnagramsKata\\Anagrams\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/enma/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\Lia Calderon\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -58,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.301/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

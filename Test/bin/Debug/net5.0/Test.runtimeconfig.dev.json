@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "/home/enma/.dotnet/store/|arch|/|tfm|",
-      "/home/enma/.nuget/packages"
+      "C:\\Users\\Lia Calderon\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Lia Calderon\\.nuget\\packages"
     ]
   }
 }
