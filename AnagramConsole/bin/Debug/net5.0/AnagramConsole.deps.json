@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "AnagramConsole/1.0.0": {
+        "dependencies": {
+          "Anagrams": "1.0.0"
+        },
+        "runtime": {
+          "AnagramConsole.dll": {}
+        }
+      },
+      "Anagrams/1.0.0": {
+        "runtime": {
+          "Anagrams.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AnagramConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Anagrams/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
