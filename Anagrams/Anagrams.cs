@@ -1,12 +1,30 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Anagrams
 {
     public class AnagramCls
     {
-        public string hola;
 
-        public static bool CheckAnagrams(string word1, string word2)
+        public static void findAnagrams(List<string> words)
+        {
+            Dictionary<string, string> anagram = new Dictionary<string, string>();
+            foreach (var word in words)
+            {
+                string key = anagramHash(word);
+                if (anagram.ContainsKey(key))
+                {
+                    anagram[key] = string.Join(',',word);
+                }
+                else
+                {
+                    anagram.Add(key,null);
+                }
+            }
+
+        }
+
+        private static bool checkAnagrams(string word1, string word2)
         {
             if (word1 == null || word2 == null)
             {
@@ -20,8 +38,8 @@ namespace Anagrams
 
             else
             {
-                word1 = Reverse(word1);
-                word2 = Reverse(word2);
+                word1 = anagramHash(word1);
+                word2 = anagramHash(word2);
                 if (word1 == word2)
                 {
                     return true;
@@ -33,7 +51,7 @@ namespace Anagrams
             }
         }
 
-        private static string Reverse(string input)
+        private static string anagramHash(string input)
         {
             char[] temp = input.ToLowerInvariant().ToCharArray();
             Array.Sort(temp);
