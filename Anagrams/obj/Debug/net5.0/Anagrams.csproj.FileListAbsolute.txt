@@ -1,0 +1,12 @@
+/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/bin/Debug/net5.0/Anagrams.deps.json
+/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/bin/Debug/net5.0/Anagrams.dll
+/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/bin/Debug/net5.0/ref/Anagrams.dll
+/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/bin/Debug/net5.0/Anagrams.pdb
+/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/obj/Debug/net5.0/Anagrams.csproj.AssemblyReference.cache
+/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/obj/Debug/net5.0/Anagrams.GeneratedMSBuildEditorConfig.editorconfig
+/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/obj/Debug/net5.0/Anagrams.AssemblyInfoInputs.cache
+/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/obj/Debug/net5.0/Anagrams.AssemblyInfo.cs
+/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/obj/Debug/net5.0/Anagrams.csproj.CoreCompileInputs.cache
+/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/obj/Debug/net5.0/Anagrams.dll
+/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/obj/Debug/net5.0/ref/Anagrams.dll
+/media/enma/3439-6134/Proyectos/Anagrams Project/Anagrams/obj/Debug/net5.0/Anagrams.pdb
