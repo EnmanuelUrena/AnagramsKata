@@ -5,6 +5,7 @@ namespace Anagrams
 {
     public class Anagram
     {
+        public static int cantWords = 0;
         public static Dictionary<string,string> findAnagrams(List<string> words)
         {
             Dictionary<string, string> anagram = new Dictionary<string, string>();
@@ -14,6 +15,7 @@ namespace Anagrams
                 if (anagram.ContainsKey(key))
                 {
                     string value = anagram[key];
+                    cantWords++;
                     anagram[key] = string.Concat(value,',',word);
                 }
                 else
@@ -21,7 +23,7 @@ namespace Anagrams
                     anagram.Add(key,word);
                 }
             }
-            anagram = removeAnagram(anagram);
+            anagram = removeNotAnagram(anagram);
             return anagram;
 
         }
@@ -53,7 +55,7 @@ namespace Anagrams
             }
         }
 
-        private static Dictionary<string, string> removeAnagram(Dictionary<string, string> anagram)
+        private static Dictionary<string, string> removeNotAnagram(Dictionary<string, string> anagram)
         {
             foreach (var item in anagram)
             {

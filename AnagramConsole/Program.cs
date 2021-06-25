@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using Anagrams;
 
 namespace AnagramConsole
@@ -8,20 +9,21 @@ namespace AnagramConsole
     {
         static void Main(string[] args)
         {
-            List<string> list = new List<string>();
-            list.Add("pedro");
-            list.Add("miro");
-            list.Add("drope");
-            list.Add("cora");
-            list.Add("ropde");
-            list.Add("porra");
-            list.Add("romi");
+            var list = readFile("wordlist.txt");
             var result = Anagram.findAnagrams(list);
-            foreach (var item in result)
-            {
-                System.Console.WriteLine(item);
-            }
+            System.Console.WriteLine(Anagram.cantWords);
 
+        }
+        static List<string> readFile(string path)
+        {
+            StreamReader stream = new StreamReader(path);
+            string linesr1;
+            var DataList = new List<string>();
+            while ((linesr1 = stream.ReadLine()) != null)
+            {
+               DataList.Add(linesr1);
+            }
+            return DataList;
         }
     }
 }
